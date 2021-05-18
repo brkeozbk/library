@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    box-sizing:border-box;
+    
+}
+body{
+    height: 100%;
+    width:100% ;
+    flex-direction: row;
+}
+.panel{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #282739;
+    
+}
+nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.menu_header{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    border-style: none
+}
+.menu_header a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #282739;
+    
+}
+.menu_header a:hover{
+    background-color:#6b67b473;
+    transition:1s;
+}
+li{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+li a{
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items:center ;
+    color: wheat;
+    transition: 1s;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+.kullanici{
+    background-color: #6b67b473;
+}
+li a:hover{
+    background-color: #6b67b473;
+    transition:1s;
+}
+.kullanici a:hover{
+background-color: #282739;
+}
+.container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+.container_head{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    box-shadow: 5px 5px 5px 5px rgba(144, 143, 158, 0.753);   
+    flex-direction: row; 
+}
+.head_left{
+display: flex;
+height: 100%;
+width: 30%;
+align-items: center;
+color: wheat;
+}
+.head_left h1{
+    font-size:3rem;
+    text-shadow:2px 2px gray;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+.head_right{
+display: flex;
+height: 100%;
+width: 70%;
+}
+.head_right{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.head_right a{
+    display: flex;
+    height: 90%;
+    width: 12%;
+    justify-content: center;
+    align-items: center;
+}
+.head_right a img{
+    display: flex;
+    height: 67px;
+    width: 67px;
+    transition: 1s;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.445);
+    border-radius: 10px 10px;
+}
+.head_right a img:hover{
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.445);
+    height: 70px;
+    width: 70px;
+    transition: 1s;
+}
+.container_in{
+    display: flex;
+    width: 100%;
+    height: 85%;
+
+}

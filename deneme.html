@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deneme.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="slider">
+ 
+ 
+        <div class="slayt" style="background-color:#060;">
+                <img src="https://www.w3schools.com/w3css/img_fjords_wide.jpg" width="700" height="300">
+         
+         
+        <div class="aciklama">MERHABA 1</div>
+         
+         
+        </div>
+         
+         
+         
+         
+        <div class="slayt" style="background-color:#CF0">
+                <img src="https://www.w3schools.com/w3images/sound.jpg" width="700" height="300">
+         
+         
+        <div class="aciklama">MERHABA 2</div>
+         
+         
+        </div>
+         
+         
+         
+         
+        <div class="slayt" style="background-color:#03F">
+                <img src="https://www.w3schools.com/w3images/workbench.jpg" width="700" height="300">
+         
+         
+        <div class="aciklama">MERHABA 3</div>
+         
+         
+        </div>
+         
+         
+         
+         
+        <div class="slayt" style="background-color:red">
+                <img src="https://www.w3schools.com/w3images/coffee.jpg" width="700" height="300">
+         
+         
+        <div class="aciklama">MERHABA 4</div>
+         
+         
+        </div>
+         
+         
+         
+         
+        <div class="slayt" style="background-color:green">
+                <img src="https://www.w3schools.com/w3css/img_nature_wide.jpg" width="700" height="300">
+         
+         
+        <div class="aciklama">MERHABA 5</div>
+         
+         
+        </div>
+         
+         
+         
+         
+        <div class="slayt" style="background-color:yellow">
+                <img src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" width="700" height="300">
+         
+         
+        <div class="aciklama">MERHABA 6</div>
+         
+         
+        </div>
+         
+         
+            <!--Slayt numaraland覺rma-->
+         
+         
+        <div class="slaytsirasi">
+         
+         
+        <ul>
+         
+         
+             <li onmouseover="aktif=0; slider();"></li>
+         
+         
+         
+         
+             <li onmouseover="aktif=1; slider();"></li>
+         
+         
+         
+         
+             <li onmouseover="aktif=2; slider();"></li>
+         
+         
+         
+         
+             <li onmouseover="aktif=3; slider();"></li>
+         
+         
+         
+         
+             <li onmouseover="aktif=4; slider();"></li>
+         
+         
+         
+         
+             <li onmouseover="aktif=5; slider();"></li>
+         
+         
+        </ul>
+         
+         
+        </div>
+         
+         
+        </div>
+</body>
+</html>
+<script type="text/javascript" language="javascript">
+	var aktif=0;
+	var pasif=null;
+	slider();
+	
+	var ileri=document.createElement('div');
+	ileri.style.right="0";
+	ileri.innerHTML=">";
+	ileri.className="ileri";
+	ileri.onclick=function(){slider();}
+	var geri=document.createElement("div");
+	geri.style.left="0";
+	geri.innerHTML="<";
+	geri.className="geri";
+	geri.onclick=function(){ aktif-=2; slider();}
+	var anadiv=document.getElementById("slider");
+	anadiv.appendChild(ileri);
+	anadiv.appendChild(geri);
+	
+	
+	anadiv.onmouseover=function(){clearTimeout(slayt_zaman);}
+	anadiv.onmouseout=function(){slayt_zaman=setInterval(slider,5000);}
+	
+	function slider(){
+	    
+		if(aktif>=document.getElementsByClassName("slayt").length){ 
+		aktif=0;
+		}else if(aktif<0){ 
+		aktif=document.getElementsByClassName("slayt").length-1; }
+	if(pasif!=null){
+		
+		var pasifdiv=document.getElementsByClassName("slayt")[pasif];
+		pasifdiv.style.animation="hareketsagsol2 linear 1s";
+		pasifdiv.style.right="-700px";
+		
+		}
+		
+		for(var s=0;s<document.getElementsByTagName("li").length;s++){
+		    document.getElementsByTagName("li")[s].setAttribute("class","");
+		}
+		
+		var aktifdiv=document.getElementsByClassName("slayt")[aktif];
+		aktifdiv.style.animation="hareketsagsol linear 1s";
+		aktifdiv.style.opacity="1";
+		aktifdiv.style.right="0px";
+    		document.getElementsByTagName("li")[aktif].setAttribute("class","aktifLi");
+		
+	pasif=aktif;
+	aktif++;
+	}
+		var slayt_zaman=setInterval(slider,5000);
+</script>

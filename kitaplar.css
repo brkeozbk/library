@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    box-sizing:border-box;
+
+    
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(40,39,57);
+    /* background-color: #f1f1f1; */
+    color: #f1f1f1;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  
+
+
+
+@keyframes hareketsagsol{
+    from{ right:-700px; opacity:0.5;}to{right:0px; opacity:1;}
+}
+@keyframes hareketsagsol2{
+    from{ right:0px;opacity:1;}to{right:700px;opacity:0.5;}
+}
+#slider{
+
+width:400px;
+height:600px;
+overflow:hidden;
+position:relative;
+border:1px solid green;
+}
+.slayt{
+width:400px;
+height:600px;
+overflow:hidden;
+position:absolute;
+top:0;
+right:-700px;
+opacity:0.5;
+}
+.ileri,.geri{
+width:30px;
+height:30px;
+line-height:30px;
+background-color:rgba(153,153,153,0.5);
+text-align:center;
+font-weight:600;
+position:absolute;
+top:45%;
+cursor:pointer;
+}
+.aciklama{
+width:100%;
+height:auto;
+padding:10px;
+color:white;
+opacity:0.4;
+background-color:rgba(0,0,0,0.4);
+position:absolute;
+bottom:0;
+}
+.slaytsirasi ul{ list-style: none; padding:0; margin:0;}
+.slaytsirasi ul li{ display:inline-block; padding:0.5em; background-color:rgba(255,255,255,0.5); border-radius:50%; transition:all .5s linear}
+.slaytsirasi ul li:hover{ background-color:rgba(242, 17, 17, 0.85);}
+.aktifLi{ background-color:rgba(242, 17, 17, 1) !important;}
+.slaytsirasi{ position: absolute; top:2px;left:5px;}
+
+.duzeltme{
+    display: flex;
+    width: 100%;
+    height: 600px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

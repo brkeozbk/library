@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    box-sizing:border-box;
+    
+}
+body{
+    height: 100%;
+    width:100% ;
+    flex-direction: column;
+}
+.firstly{
+    height: 100vh;
+    width: 100% ;
+    background-color: rgb(40,39,57);
+    flex-direction: row;
+
+}
+nav{
+display: flex;
+position: fixed;
+height:16%;
+width:100% ;
+background-color: rgba(249, 250, 253, 0);
+align-items: center;
+flex-direction: row;
+
+
+}
+.img{
+display: flex;
+height: 80%;
+justify-content: center;
+align-items: center;
+width: 30%;
+}
+.img a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+li{
+    display: flex;
+    height: 50%;
+    width:10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+li a{
+    color: rgb(104, 104, 104);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    transition: 1s;
+}
+li a:hover{
+color:#efefef;;
+transition: 1s;
+}
+
+.button{
+    display: flex;
+    height: 70%;
+    width:20% ;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left: 6%;
+}
+.button button{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    margin-top: 4px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius:1vh ;
+    transition:1s;
+    
+}
+.button button:hover{
+    background-color:rgb(40,39,57);
+    color:#efefef;
+    transition: 1s;
+}
+.firstly-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.firstly-left{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    margin-top: 8%;
+    
+}
+.firstly-left-center{
+    display: flex;
+    height: 40%; 
+    width: 60%;   
+    font-family: Garamond, serif;
+    align-items: center;
+    justify-content: center;
+}
+.firstly-left-center h1{
+   font-size: 40px;
+   color: rgb(238, 255, 162);
+}
+.firstly-right{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: row-reverse;
+}
+
+
+        
+.third{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+.kutuphane_back{
+    display: flex;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+   background-image:url("libraries-bg.png");
+   background-position: left;
+   background-size: contain;
+   background-repeat: no-repeat;
+   
+}
+.kutuphane_front{
+   display: flex;
+   position: relative;
+   width: 100%;
+   height: 60%;
+   align-items: center;
+}
+.kutuphane_front_left{
+   display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: row-reverse;
+    
+}
+.kutuphane_front_left img{
+    display: flex;
+    width: 82%;
+    height: 100%;
+}
+.kutuphane_front_right{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kutuphane_front_right p{
+display: flex;
+width: 40%;
+font-size: 1rem;
+color:gray;
+padding-top: 1rem;
+line-height: 2rem;
+font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.kutuphane_front h1{
+color:#fdc800;
+font-size: 6rem;
+}
+.kutuphane_front span{
+color: black;
+font-size:3.5rem;
+}
+.kutuphane_front_right a{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 20%;
+ height: 10%;
+ border-radius: 30px 30px;
+ background-color:#723182 ;
+ color: white;
+ font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ margin-top: 1rem;
+ transition: 1s;
+}
+.kutuphane_front_right a:hover{
+    box-shadow: 5px 5px 5px 5px rgba(40, 39, 57, 0.753);
+    background-color: white;
+    color:#723182;
+    transition: 1s;
+}
+
+.fifth{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+   align-items: center;
+}
+.fifth_up{
+display: flex;
+height: 25%;
+width: 100%;
+background-color:rgba(40, 39, 57, 0.048);
+justify-content: center;
+}
+.fifth_up h1{ 
+margin-top: 2px;
+color:rgb(240, 199, 16);
+font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 3rem;
+}
+.fifth .h11{
+    margin-top: 3px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 2.2rem;
+    color:gray;
+}
+.fifth_down{
+    display: flex;
+    height: 75%;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fifth_first{
+display: flex;
+width: 40%;
+height: 90%;
+background-color:whitesmoke;
+margin-right: 1rem;
+justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.356);
+flex-direction: column;
+}
+.fifth_second{
+    display: flex;
+    height: 90%;
+    width: 40%;
+    background-color: whitesmoke;
+    margin-left: 1rem;
+    justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.356);
+flex-direction: column;
+}
+.fifth .first_up{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background: rgb(203, 207, 255);
+    
+}
+.first_down{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background: whitesmoke;
+    flex-direction: column;
+}
+.first_up a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image:url("team1.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.first_down a{
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-left:1% ;
+    width: 12rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 10px 10px;
+    background-color:rgb(240, 199, 16);
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(40,39,57);
+    transition: 1s;
+}
+.first_down a:hover{
+background-color:rgb(40,39,57);
+color:rgb(240, 199, 16);
+transition: 1s;
+}
+.fifth .second_up{
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+.second_down{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background: whitesmoke;
+    flex-direction: column;
+}
+.second_up a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image:url("team2.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background: #fdc800;
+    flex-direction: column;
+}
+.fifth span{
+    margin-top: 1%;
+    font-weight: bold;
+}
+.fifth p{
+    margin-top: 2%;
+}
+.second_down a{
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-left:2% ;
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 10px 10px;
+    background-color:rgb(240, 199, 16);
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(40,39,57);
+    transition: 1s;
+}
+.second_down a:hover{
+    background-color:rgb(40,39,57);
+    color:rgb(240, 199, 16);
+    transition: 1s;
+    }
+.adres{
+        display: flex;
+        width: 100%;
+        height: 30%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .adres a{
+        
+        color: gray;
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    }
+    .medias{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+    }
+    .medias a{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        margin-left: 2rem;
+    }
+
+    
